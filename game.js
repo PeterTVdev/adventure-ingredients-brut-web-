@@ -91,6 +91,14 @@ function load() {
    imageLoad.add("images/menu_web.png");
    imageLoad.add("images/map.png");
    imageLoad.add("images/anul.png");
+   imageLoad.add("images/circle_red_1.png");
+   imageLoad.add("images/circle_green_1.png");
+   imageLoad.add("images/circle_orange_1.png");
+   imageLoad.add("images/circle_green_house_1.png");
+   imageLoad.add("images/circle_green_house_2.png");
+   imageLoad.add("images/circle_red_2.png");
+   imageLoad.add("images/circle_green_2.png");
+   imageLoad.add("images/circle_orange_2.png");
 
    imageLoad.start(gameReady);
    // console.log("load");
