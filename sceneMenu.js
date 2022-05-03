@@ -1,16 +1,16 @@
 class SceneMenu {
     constructor() {
-        this.imageLoader = null;
+        this.imageLoader = [];
         this.sprFond = null;
-        this.decors = [];
+        this.decors = null;
     }
 
     load(pLoader) {
-        this.imageLoader = pLoader.getLoadImage("images/menu_web.png");
-        this.sprFond = new Sprite(this.imageLoader);
+        this.imageLoader[0] = pLoader.getLoadImage("images/menu_web.png");
+        this.imageLoader[1] = pLoader.getLoadImage("images/map.png");
 
-        this.decors[0] = pLoader.getLoadImage("images/map.png");
-        this.decors[1] = new Sprite(this.decors[0]); 
+        this.sprFond = new Sprite(this.imageLoader[0]);
+        this.decors = new Sprite(this.imageLoader[1]); 
     }
 
     update(dt) {
@@ -18,8 +18,12 @@ class SceneMenu {
     }
 
     draw(pCtx) {
-        this.decors[1].draw(pCtx);
-        this.sprFond.draw(pCtx);
+        if (this.decors != null) {
+            this.decors.draw(pCtx);  
+        }
+        if (this.sprFond != null) {
+            this.sprFond.draw(pCtx);
+        }
         DrawText(pCtx, "Click Here !", canvas.width/2, canvas.height/2);
     }
 }

@@ -1,0 +1,56 @@
+✔ Créer une class Personnage : @done (18/04/2022, 23:18:04) -Puis lui ajouter ses stats (atk, def, vie, fatigue, xp, lvl)
+
+✔ Rendre fonctionnel le Shop @done (21/04/2022, 00:44:19)-Afficher les catégories (armes, armuresX)-Rendre achetable
+
+✔ Rendre fonctionnel l'hotel @done (21/04/2022, 18:04:11)-Afficher deux boutons -Un qui va soigner à 50% ses stats et l'autre à 100%-Mettre le prix en bas 
+
+✔ Rendre fonctionnel l'Alchimie @done (23/04/2022, 18:55:30)-Mettre trois cases vide qui va representer (ingredient1+ingredient2=new item pour fabriquer )-PS: dans le jeu pour acheter des armes armures et aussi pour faire evoluer les batiments il faut du matos et le matos se creer avec des ingredients bruts et les ingredient bruts se trouvent dans les donjon-Afficher l'inventaire pour que le joueur peut selectionner les aliments brut qui lui interresse 
+
+✔ Afficher les ingredients dans le Bag @done (24/04/2022, 18:40:04)
+
+✔ Rendre fonctionnel la mairie @done (24/04/2022, 23:26:35)
+
+✔ Creer le niveau 1 @done (28/04/2022, 00:58:05)
+
+✔ Mettre les items dans le donjon @done (28/04/2022, 18:24:56)
+
+✔ Dans le fichier sceneJeu.js aller a la ligne 430 et continuer de coder le systeme de recompense quand les batiments level up ! @done (29/04/2022, 18:05:57)
+
+✔ Gerer la variable loaderEnnemy car elle se trouve dans le fichier nv 1 et 2 ... @done (29/04/2022, 20:39:14)
+
+✔ Creer le niveau 2 @done (29/04/2022, 22:33:25)
+
+✔ Creer le niveau 3 @done (30/04/2022, 17:55:32)
+
+✔ Creer le niveau 4 @done (30/04/2022, 18:25:47)
+
+✔ Creer le niveau 5-6-7 @done (30/04/2022, 19:32:38)
+
+✔ Creer le niveau 8-9-10 @done (30/04/2022, 22:56:06)
+
+✔ Afficher en grand que le Personnage à atteint la fatigue max (afficher le text en rouge) @done (01/05/2022, 16:20:02)
+
+✔ Ajouter effet sonor comme : le bat blesser, boss blesser, bat kill, boss kill, move hero, hero kill @done (01/05/2022, 23:24:18)
+
+✘ Ajouter effet visuel comme : Quand ça rends les coups @cancelled (03/05/2022, 01:47:53)
+
+✔ Ajouter une musique de fond @done (01/05/2022, 20:38:22)
+
+✔ Ajouter les vetements quand le hero est equiper @done (03/05/2022, 01:48:03)
+
+✔ Reajuster la difficulter car trop facile @done (03/05/2022, 17:26:02)
+- afficher larmure qui est actuellement equiper 
+
+- Faudra que la gestion de deplacement du hero soit accesible dans un objet a part ...
+
+- Quand un batiment est au nv 2 mini alors il raporte des gold et se sera ecrit sur chaque batiments respectif
+
+-Gerer lupdate et le draw quand le joueur clique sur un cercle du lvl
+
+- En cas de mort utiliser un systeme de roguelike , c'est a dire cas la fin de chaque donjon le joueur verras le nombre de chauve sourie tués et le nombre de gold recolter
+
+
+--> Pour creer les autre niveaux faut revenir dans lupdate du fichier sceneJeu.js et aller a la ligne 450 environ
+
+La méthode push va ajouter à la fin de la liste. Utilisez "pop" si vous voulez supprimer le dernier élément, "shift" pour supprimer le premier, et "unshift" pour ajouter au début.
+Pour supprimer un élément au milieu du tableau, utilisez "splice" 
